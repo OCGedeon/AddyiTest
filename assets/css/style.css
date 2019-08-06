@@ -1,0 +1,627 @@
+body {
+    background-color: #DF1883;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    background-image: url("../images/AddyiBG2.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Prompt', sans-serif;
+} 
+
+h2, h3, h4, h5 {
+    text-align: center;
+    color: white;
+}
+
+h1.align-left,
+h2.align-left,
+h3.align-left,
+h4.align-left,
+h5.align-left {
+    text-align: left;
+}
+.align-left {
+    text-align: left;
+}
+.dtg-link {
+    color: #f9c43e;
+}
+
+label {
+    color: white;
+    font-family: 'Prompt', sans-serif;
+} 
+
+.logo-wrapper {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+.logo {
+    margin-top: 20rem;
+    width: 65%;
+    height: auto;
+}
+
+.splash-div {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    text-align: center;
+}
+
+.center-div {
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+}
+
+.main-content {
+    position: relative;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+    align-content: center;
+    height: 65vh;
+ }
+
+ .begin {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 12px 0px;
+    min-height: 48px;
+    background-color: rgb(244, 244, 244);
+    color: rgb(117, 117, 117);
+    transition: background-color 0.2s ease 0s, color 0.2s ease 0s, border-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    padding: 8px 18px;
+    border-color: transparent;
+    border-radius: 4px;
+ }
+
+ .begin:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 12px 0px;
+    background-color: rgb(197, 197, 197);
+    color: rgb(117, 117, 117);
+ }
+
+#question {
+    margin-bottom: 50px;
+}
+
+#question-alert {
+    margin-top: 5px;
+    color: rgb(210, 205, 255);
+    font-weight: bold;
+}
+
+.choice-button {
+    width: 100%;
+    height: 50px;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    word-break: keep-all;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 12px 0px;
+    background-color: rgba(244, 244, 244, 0.9);
+    color: rgb(117, 117, 117);
+    transition: background-color 0.2s ease 0s, color 0.2s ease 0s, border-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    padding: 8px 18px;
+    border-color: transparent;
+    border-radius: 4px;
+}
+
+.choice-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 12px 0px;
+    background-color: rgb(197, 197, 197);
+    color: rgb(117, 117, 117);
+}
+/* .questionnaire-content {
+    
+} */
+#privacy-policy:not('choice-button') {
+    text-align: left;
+    align-content: left;
+}
+#privacy-policy .choice-button {
+    margin-bottom: 50px;
+}
+.privacy-topic {
+    color: white;
+}
+.input-field {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.date-section {
+    margin-bottom: 40px;
+}
+
+.date-labels {
+    /* display: block; */
+    align-content: left;
+    text-align: left;
+}
+.date-labels div {
+    display: block;
+    float: left;
+}
+
+.date-fields {
+    /* display: block; */
+    /* padding-left: 50px; */
+    /* float: left; */
+    align-content: center;
+}
+
+.month-label-div {
+    width: 18%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.day-label-div {
+    width: 18%;
+    margin-right: 5px;
+}
+
+.year-label-div {
+    width: 60%;
+    margin-right: 5px;
+}
+
+.month-field {
+    width: 18%;
+    /* margin-left: 110px; */
+    margin-right: 5px;
+}
+
+.day-field {
+    width: 18%;
+    margin-right: 5px;
+}
+
+.year-field {
+    width: 60%;
+}
+
+.checkbox-holder {
+    text-align: left;
+    margin-left: 50px;
+    min-height: 50px;
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
+    border-image: initial;
+    margin: 0px 0px 5px;
+    padding: 0px 15px;
+}
+.checkbox-label {
+    margin-left: 10px;
+    margin-bottom: 0;
+    color: rgb(117, 117, 117);
+    display: inline;
+}
+
+.radio-holder {
+    text-align: left;
+    margin-left: 50px;
+    min-height: 50px;
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
+    border-image: initial;
+    margin: 0px 0px 5px;
+    padding: 0px 15px;
+}
+.radio-label {
+    margin-left: 10px;
+    margin-bottom: 0;
+    color: rgb(117, 117, 117);
+    display: inline;
+}
+
+.datalist-input {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#start.qualified {
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.logo.qualified {
+    margin-top: 5rem;
+}
+
+.select-state-container {
+    height: 50px;
+    background-color: rgb(244, 244, 244);
+    position: relative;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
+    border-image: initial;
+    border-radius: 4px;
+    padding: 0px 15px;
+    margin: 0px 0px 5px;
+}
+.select-state {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    -webkit-appearance: none;
+    width: 100%;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    background: transparent;
+    outline: none;
+    padding: 0px 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgb(117, 117, 117);
+}
+
+.radio-holder .time-span {
+    position: absolute;
+    right: 6px;
+  }
+.schedule-row {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.col-one {
+    width: 50%;
+    display: inline-block;
+}
+
+.col-two {
+    width: 50%;
+    display: inline-block;
+}
+/* Select tag */
+#day-picker,
+#time-picker {
+    display: block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 100%;
+    max-width: 100%; 
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+}
+#day-picker,
+#time-picker::-ms-expand {
+    display: none;
+}
+#day-picker,
+#time-picker:hover {
+    border-color: #888;
+}
+#day-picker,
+#time-picker:focus {
+    border-color: none;
+    /* box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7); */
+    /* box-shadow: 0 0 0 3px -moz-mac-focusring; */
+    color: #222; 
+    outline: none;
+}
+#day-picker,
+#time-picker option {
+    font-weight:normal;
+}
+
+/* Payment section template */
+
+.begin-well.payment {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  .payment-section label,
+  .payment-section h3,
+  .payment-section h4 {
+    color: white;
+  }
+
+  .payment-section .row {	
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .payment-section .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .payment-section .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .payment-section .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .payment-section .col-25,
+  .payment-section .col-50,
+  .payment-section .col-75 {
+    padding: 0 16px;
+  }
+  
+  .payment-section .container {
+    background-color: #DF1883;
+    padding: 5px 20px 15px 20px;
+    /* border: 1px solid lightgrey; */
+    /* border-radius: 3px; */
+  }
+  
+  .payment-section input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .payment-section label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .payment-section .icon-container {
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 7px 0;
+    padding-left: 10px;
+    font-size: 24px;
+  }
+  
+  .payment-section .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .payment-section .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .payment-section a {
+    color: #ffffff;
+  }
+  .icon-container:not(last-child) i {
+    margin-right: 5px;
+  }
+  .secure-pay {
+    height: 24px;
+    width: auto;
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+  }
+  #third-party-pay {
+    width: 100%;
+    /* background-color: #ffffff; */
+    /* border-radius: 3px; */
+    margin-top: 20px;
+    align-content: center;
+    text-align: center;
+  }
+
+#apple-pay-div,
+#paypal-pay-div,
+#google-pay-div {
+    width: 31%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 10px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+@media only screen and (max-width: 992px) {
+    #apple-pay-div,
+    #paypal-pay-div,
+    #google-pay-div {
+        width: 30%;
+        cursor: pointer;
+        background-color: #ffffff;
+        border-radius: 3px;
+        padding: 10px 0;
+        margin-right: 3px;
+        display: inline-block;
+    }
+}
+@media only screen and (max-width: 460px) {
+    #apple-pay-div,
+    #paypal-pay-div,
+    #google-pay-div {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+    }
+}
+  .apple-pay {
+    height: 24px;
+    width: auto;
+    /* display: inline-block; */
+    /* margin-right: 10px; */
+  }
+  .paypal-pay {
+    height: 24px;
+    width: auto;
+    /* display: inline-block; */
+}
+.google-pay {
+    height: 24px;
+    width: auto;
+    /* display: inline-block; */
+    /* margin-right: 10px; */
+  }
+
+  .payment-section hr {
+    border: 1px solid lightgrey;
+  }
+  
+  .payment-section span.price {
+    float: right;
+    color: grey;
+  }
+  
+  @media (max-width: 800px) {
+    .payment-section .row {
+      flex-direction: column-reverse;
+    }
+    .payment-section .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+
+  /* End Payment Section */
+
+
+#question.post-payment-shrink {
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (min-width: 563px) and (max-width: 768px) {
+    #question.post-payment-shrink {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #start.qualified {
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .day-label-div {
+        width: 17%;
+        margin-right: 5px;
+    }
+}
+@media only screen and (max-width: 530px) {
+    .day-label-div {
+        width: 17%;
+        margin-right: 5px;
+    }
+}
+
+/* @media only screen and (max-width: 360px) {
+    .begin-well.payment {
+        padding-top: 100px;
+    }
+} */
+@media only screen and (max-width: 768px) {
+    .begin-well.payment {
+        padding-top: 100px;
+    }
+}
+@media only screen and (min-height: 600px) {
+    #start.qualified h4 {
+        font-size: 16px;
+    }
+    .logo.qualified {
+        margin-top: 5rem;
+    }
+}
+@media only screen and (min-height: 950px) {
+    .logo {
+        margin-top: 30rem;
+    }
+    .logo.qualified {
+        margin-top: 15rem;
+    }
+}
+@media only screen and (min-height: 1150px) {
+    .logo {
+        margin-top: 40rem;
+    }
+    .logo.qualified {
+        margin-top: 25rem;
+    }
+}
