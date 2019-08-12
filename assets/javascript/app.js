@@ -238,7 +238,7 @@ var paymentHTMLTwo = '<div class="payment-section">' +
 
         });
     }
-/*var questionsJSON = [
+var questionsJSON = [
     {
         question: "1. Let's get to know you",
         questionSub: "We respect your data & privacy. We've made it easy to understand how your information is handled to provide a secure and enjoyable experience. (DocTalkGo Privacy Policy)",
@@ -496,7 +496,7 @@ var paymentHTMLTwo = '<div class="payment-section">' +
     //     name: "additionalInfo",
     //     validation: false
     // }
-];*/
+];
 
 var privacyPolicy = '<h3>Terms of Service</h3>' +
     '<h4 class="align-left">March 10, 2014</h4>' +
