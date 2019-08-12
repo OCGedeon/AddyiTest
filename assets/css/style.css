@@ -603,7 +603,7 @@ label {
 }
 @media only screen and (min-height: 600px) {
     #start.qualified h4 {
-        font-size: 16px;
+        font-size: 14px;
     }
     .logo.qualified {
         margin-top: 5rem;
