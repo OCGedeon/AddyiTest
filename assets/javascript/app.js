@@ -219,25 +219,6 @@ var paymentHTMLTwo = '<div class="payment-section">' +
     '</div>'
     ;
 // Questions
-
-    // function to get questions
-    $(document).ready(function(){
-        getQuestionnaire();
-    });
-    var questionsJSON;
-    function getQuestionnaire()
-    {
-        $.post("https://bbf7a9d1.ngrok.io/charmhealth/Addyi3.0/functions.php", "action=getQuestionnaire",function(data){
-            var result = $.parseJSON(data);
-            if(result.status = "status")
-            {
-                questionsJSON = result.data;
-                console.log(questionsJSON);
-            }
-            $(".begin").removeAttr("disabled");
-
-        });
-    }
 var questionsJSON = [
     {
         question: "1. Let's get to know you",
@@ -281,7 +262,7 @@ var questionsJSON = [
         question: "4. How long have you been experiencing symptoms of low sexual desire or interest?",
         inputType: "choice",
         options: ["<3", "3-6", "6-12", ">12"],
-        optionsText: ["Less_than_3_months", "3-6 months", "6-12 months", "More than 12 months"],
+        optionsText: ["Less than 3 months", "3-6 months", "6-12 months", "More than 12 months"],
         links: [false, false, false, false],
         name: "decreasedDesireDuration",
         validation: false
@@ -497,7 +478,6 @@ var questionsJSON = [
     //     validation: false
     // }
 ];
-
 var privacyPolicy = '<h3>Terms of Service</h3>' +
     '<h4 class="align-left">March 10, 2014</h4>' +
     '<h4 class="align-left">Notice for customers nationwide – you are entering into an agreement with doctalkgo.com.</h4>' +
@@ -606,17 +586,14 @@ function schedule() {
 
 function newQuestion() {
     console.log("Current data object: ", data);
-    //console.log("help me: "+questionsJSON[questionIndex]);
     console.log("Current question: ", questionsJSON[questionIndex].question);
     // Clear the start box if it contains the previous question
     $("#start").empty();
     // Clear the question-alert box if it contains content from previous question
     $("#question-alert").empty();
-    //console.log("index:",questionIndex);
-    //console.log("index length: ", Object.keys(questionsJSON).length);
+
     // Set conditional to end the questionnaire for when all the questions have been completed
-    //if (questionIndex === questionsJSON.length - 1) {
-    if (questionIndex === Object.keys(questionsJSON).length - 1) {
+    if (questionIndex === questionsJSON.length - 1) {
         // Empty the #questions div
         $("#question").empty();
         // Empty the #choices div
@@ -734,7 +711,6 @@ function createChoice() {
     $("#question").html(question);
 
     // Iterate through the array of options
-
     for (var i = 0; i < (questionsJSON[questionIndex].optionsText.length); i++) {
         // Creating a div to hold the buttons
         var buttonDiv = $("<div id='button-holder" + i + "'>");
@@ -1288,8 +1264,6 @@ function constructPatientData(value, index) {
         questionIndex++;
         newQuestion();
     }
-
-    console.log(data);
 }
 
 function constructScheduleData(value, index) {
